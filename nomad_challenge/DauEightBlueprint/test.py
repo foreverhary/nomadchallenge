@@ -1,0 +1,13 @@
+from bs4 import BeautifulSoup as bs
+a="""<tr class=""><td class="local first" scope="row"><div class="L_MyAd_kc324"></div>경기 안성시</td><td class="title"><a class="" href="/job/Detail.asp?adid=110911638&amp;areacd=&amp;workaddr1=&amp;workaddr2=&amp;jobkind=&amp;jobkindsub=&amp;jobkindmulti=&amp;gendercd=&amp;agelimitcd=&amp;agelimit=0&amp;worktime=&amp;weekdays=&amp;searchterm=&amp;paycd=&amp;paystart=&amp;payend=&amp;workperiodcd=&amp;workstartdt=&amp;workenddt=&amp;workchkyn=&amp;workweekcd=&amp;targetcd=&amp;streetunicd=&amp;streetstationcd=&amp;unicd=&amp;schnm=&amp;schtext=&amp;orderby=freeorder&amp;acceptmethod=&amp;eleccontract=&amp;totalCount=14&amp;listmenucd=BRANDSITE"> <span class="company"> (주)지오다노</span><span class="title">컨셉원 안성스타필드점 의류 판매 사원 모집</span></a><span class="funcBtn"><a class="applBtn scrap" href="javascript:void(0);" id="joblistscrapgen110911638" onclick="if( confirm('개인회원으로 로그인 후 이용 가능한 서비스입니다.\n지금 로그인 하시겠습니까?') ) { loginPerson('/job/brand/main.asp', ''); }">스크랩</a><a class="applBtn thumbView" href="#" id="JobFreeListTd110911638" onclick="JobPreview.PREVIEW('JobFreeList','110911638',''); return false;">요약보기</a><a class="applBtn blankView" href="/job/Detail.asp?adid=110911638&amp;areacd=&amp;workaddr1=&amp;workaddr2=&amp;jobkind=&amp;jobkindsub=&amp;jobkindmulti=&amp;gendercd=&amp;agelimitcd=&amp;agelimit=0&amp;worktime=&amp;weekdays=&amp;searchterm=&amp;paycd=&amp;paystart=&amp;payend=&amp;workperiodcd=&amp;workstartdt=&amp;workenddt=&amp;workchkyn=&amp;workweekcd=&amp;targetcd=&amp;streetunicd=&amp;streetstationcd=&amp;unicd=&amp;schnm=&amp;schtext=&amp;orderby=freeorder&amp;acceptmethod=&amp;eleccontract=&amp;totalCount=14&amp;listmenucd=BRANDSITE" target="_blank">새창보기</a></span></td><td class="data"><span class="consult">시간협의</span></td><td class="pay"><span class="payIcon year">연봉</span><br><span class="number">26,600,000</span></br></td><td class="regDate last"><strong>19분전</strong></td></tr>"""
+b=bs(a, 'html.parser')
+
+def go(b):
+    print(b.select_one('td.local').get_text().replace('\xa0', ' '))
+    print(b.select_one('td.title > a > span.company').get_text().replace('\xa0', ' '))
+    print(b.select_one('td.data > span').get_text().replace('\xa0', ' '))
+    print(b.select_one('td.title > a > span.company').get_text().replace('\xa0', ' '))
+    print(b.select_one('td.data > span').get_text().replace('\xa0', ' '))
+    print(b.select_one('td.pay > span.payIcon').get_text().replace('\xa0', ' '))
+    print(b.select_one('td.pay > span.number').get_text().replace('\xa0', ' '))
+    print(b.select_one('td.regDate').get_text())
