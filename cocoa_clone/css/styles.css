@@ -1,29 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 @import "reset.css";
-@import "status-bar.css";
+@import "components/status-bar.css";
+@import "variables.css";
+@import "screens/logins.css";
 body {
   font-family: "Open Sans", sans-serif;
-}
-
-.welcome-header {
-  margin-top: 85px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.welcome-header__title {
-  margin-bottom: 30px;
-  font-size: 25px;
-  font-weight: 600;
-}
-
-.welcome-header__text {
-  width: 50%;
-  opacity: 0.8;
-}
-
-#login-form {
-  margin-top: 100px;
 }
