@@ -1,0 +1,6 @@
+.hidden {
+  display: none;
+}
+.play_clicked {
+  font-weight: bold;
+}
