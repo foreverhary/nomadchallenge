@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+  background-color: aliceblue;
+  font-weight: bold;
+}
+main {
+  width: 80vh;
+  margin: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+main > div {
+  margin: 10px;
+  height: 350px;
+  width: 220px;
+  position: relative;
+  border: 5px solid white;
+}
+
+main > div:first-child {
+  background-color: tomato;
+}
+
+main > div:nth-child(2) {
+  background-color: teal;
+}
+
+main > div:nth-child(3) {
+  background-color: burlywood;
+}
+
+main > div:last-child {
+  background-color: thistle;
+}
+
+main div div {
+  width: 220px;
+  height: 150px;
+  background-color: white;
+  position: absolute;
+  top: 20px;
+}
+
+p {
+  font-size: 25px;
+}
