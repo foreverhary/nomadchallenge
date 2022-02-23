@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #01b8a2;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+header div {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+header div:first-child {
+  position: absolute;
+  left: 10px;
+}
+
+.play__area {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px 0px;
+}
+.button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.button_key {
+  border: solid 2px;
+  border-bottom: solid 5px;
+  margin: 10px 20px;
+  height: 150px;
+}
+.button__play {
+  border-radius: 10px;
+  width: 300px;
+}
+.button__circle {
+  border-radius: 50%;
+  width: 150px;
+}
+
+.album_icon__yellow {
+  background-color: #ffbd11;
+}
+.album_icon__tomato {
+  background-color: #f85a2a;
+}
+.album_icon__pink {
+  background-color: #ff89bb;
+}
+.album_icon__blue {
+  background-color: #1847e5;
+}
+.album_icon__green {
+  background-color: #00c6ad;
+}
+.album_icon {
+  border: 2px solid;
+  width: 80px;
+  height: 80px;
+  border-radius: 20%;
+}
+.album_icon__selected {
+  width: 200px;
+  height: 200px;
+}
+
+.play_selected__song {
+  font-size: 80px;
+  font-weight: bold;
+}
+.play_selected__singer {
+  font-size: 40px;
+}
+
+li {
+  display: flex;
+  justify-content: flex-start;
+  margin: 40px;
+}
+
+li > div:last-child > span {
+  margin: 20px 15px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+li > div:last-child > p {
+  margin: 20px 15px;
+  font-size: 20px;
+  opacity: 0.7;
+}
