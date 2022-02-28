@@ -8,9 +8,217 @@ body {
   align-items: center;
   height: 100vh;
 }
-body > div {
+.page {
   background-color: white;
   border-radius: 30px;
   width: 365px;
   height: 790px;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 20px;
+  opacity: 0.5;
+}
+
+.song__played {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.song__played_img {
+  width: 20%;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.song__played_title {
+  margin: 10px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.song__played_cat {
+  opacity: 0.7;
+}
+
+.song__option_button {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.song__option_button > button {
+  border-radius: 20px;
+  border: none;
+  width: 35%;
+  height: 40px;
+  font-size: 15px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
+  margin: 40px 0px;
+}
+
+.song__option_button > button:first-child {
+  background-color: black;
+  color: white;
+}
+.song__option_button > button:last-child {
+  background-color: white;
+}
+.song__option_button > button:last-child > span {
+  opacity: 0.5;
+}
+
+.song__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 10px;
+  margin: 0px 30px;
+  border-radius: 10px;
+  position: relative;
+}
+.song_second {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+.song__list > i {
+  opacity: 0.5;
+  position: absolute;
+  right: 15px;
+}
+.song__list_img {
+  border-radius: 10%;
+  width: 15%;
+}
+.song__list_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px 15px;
+}
+.song__list_singer {
+  opacity: 0.5;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.song__list_title {
+  font-weight: 600;
+}
+
+.play-controller {
+  position: absolute;
+  bottom: 10px;
+  width: 90%;
+  margin: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  height: 60px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+.play-controller__text {
+  margin: 0px 25px;
+}
+.play-controller__singer {
+  opacity: 0.5;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.play-controller__title {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.play-controller__component {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0px 20px;
+}
+.play-controller__component > i {
+  margin: 0px 10px;
+  font-size: 20px;
+}
+.play-controller__component > i:nth-child(odd) {
+  font-size: 10px;
+}
+
+.page2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.song-page__img {
+  border-radius: 15px;
+  width: 75%;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.1);
+  margin: 40px 0px;
+}
+.song-page__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+.song-page__info_title {
+  font-weight: 600;
+  font-size: 30px;
+}
+.song-page__info_singer {
+  margin-top: 13px;
+  opacity: 0.2;
+  font-weight: 600;
+}
+
+.song-page__slider_text {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 50px;
+  opacity: 0.4;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.song-page__slider {
+  -webkit-appearance: none;
+  width: 90%;
+  height: 7px;
+  background: rgba(107, 107, 107, 0.6);
+  border-radius: 5px;
+  background-image: linear-gradient(black, black);
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+}
+
+.song-page__play-component {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+}
+
+.song-page__play-component > i:nth-child(4n + 1) {
+  opacity: 0.3;
+}
+
+.song-page__play-component_play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.1);
 }

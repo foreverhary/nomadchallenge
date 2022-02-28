@@ -4,21 +4,127 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>You Are Awesome!</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="page1">
+    <div class="page">
       <div class="header">
-        <i class="fas fa-arrow-left"></i>
-        <i class="fas fa-search"></i>
+        <i class="fas fa-arrow-left fa-lg"></i>
+        <i class="fas fa-search fa-lg"></i>
       </div>
+      <div class="song__played">
+        <img class="song__played_img" src="img/12th_img.png" />
+        <span class="song__played_title">Tyler, The Creator</span>
+        <p class="song__played_cat">Rap, Hip-Hop</p>
+      </div>
+      <div class="song__option_button">
+        <button>Shuffle</button>
+        <button>
+          <i class="fas fa-heart"></i>
+          <span>212971</span>
+        </button>
+      </div>
+      <ul>
+        <li class="song__list">
+          <img class="song__list_img" src="img/12th_img.png" />
+          <div class="song__list_text">
+            <span class="song__list_singer">Tyler, the Creator</span>
+            <p class="song__list_title">EARFQUAKE</p>
+          </div>
+          <i class="fas fa-ellipsis-v fa-lg"></i>
+          <div></div>
+        </li>
+        <li class="song__list song_second">
+          <img class="song__list_img" src="img/12th_img.png" />
+          <div class="song__list_text">
+            <span class="song__list_singer">Tyler, the Creator</span>
+            <p class="song__list_title">NOVEMBER</p>
+          </div>
+          <i class="fas fa-ellipsis-v fa-lg"></i>
+          <div></div>
+        </li>
+        <li class="song__list">
+          <img class="song__list_img" src="img/12th_img.png" />
+          <div class="song__list_text">
+            <span class="song__list_singer">Tyler, the Creator</span>
+            <p class="song__list_title">911</p>
+          </div>
+          <i class="fas fa-ellipsis-v fa-lg"></i>
+          <div></div>
+        </li>
+        <li class="song__list">
+          <img class="song__list_img" src="img/12th_img.png" />
+          <div class="song__list_text">
+            <span class="song__list_singer">Tyler, the Creator</span>
+            <p class="song__list_title">WOLF</p>
+          </div>
+          <i class="fas fa-ellipsis-v fa-lg"></i>
+          <div></div>
+        </li>
+        <li class="song__list">
+          <img class="song__list_img" src="img/12th_img.png" />
+          <div class="song__list_text">
+            <span class="song__list_singer">Tyler, the Creator</span>
+            <p class="song__list_title">WOLF</p>
+          </div>
+          <i class="fas fa-ellipsis-v fa-lg"></i>
+          <div></div>
+        </li>
+        <li class="song__list">
+          <img class="song__list_img" src="img/12th_img.png" />
+          <div class="song__list_text">
+            <span class="song__list_singer">Tyler, the Creator</span>
+            <p class="song__list_title">WOLF</p>
+          </div>
+          <i class="fas fa-ellipsis-v fa-lg"></i>
+          <div></div>
+        </li>
+      </ul>
+      <nav class="play-controller">
+        <div class="play-controller__text">
+          <span class="play-controller__singer">Tyler, The Creator</span>
+          <p class="play-controller__title">NOVEMBER</p>
+        </div>
+        <div class="play-controller__component">
+          <i class="fas fa-step-backward"></i>
+          <i class="fas fa-pause"></i>
+          <i class="fas fa-step-forward"></i>
+        </div>
+      </nav>
     </div>
-    <div class="page2">
+    <div class="page">
       <div class="header">
-        <i class="fas fa-arrow-left"></i>
-        <i class="fas fa-ellipsis-v"></i>
+        <i class="fas fa-arrow-left fa-lg"></i>
+        <i class="fas fa-ellipsis-v fa-lg"></i>
+      </div>
+      <div class="page2">
+        <img class="song-page__img" src="img/12th_img.png" />
+        <div class="song-page__info">
+          <span class="song-page__info_title">November</span>
+          <p class="song-page__info_singer">Tyler, The Creator</p>
+        </div>
+        <div class="song-page__slider_text">
+          <span>1:56</span>
+          <span>2:21</span>
+        </div>
+        <input type="range" class="song-page__slider" />
+        <div class="song-page__play-component">
+          <i class="fas fa-sync"></i>
+          <i class="fas fa-step-backward"></i>
+          <div class="song-page__play-component_play">
+            <i class="fas fa-play"></i>
+          </div>
+          <i class="fas fa-step-forward"></i>
+          <i class="fas fa-random"></i>
+        </div>
       </div>
     </div>
   </body>
